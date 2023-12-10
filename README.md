@@ -10,6 +10,12 @@
   ```
     php artisan migrate:rollback  --path=/database/migrations/2023_11_21_042309_create_applications_table.php
   ```
+- Enum Update
+
+  ```
+  DB::statement("ALTER TABLE p_c_embassies MODIFY COLUMN apply_with ENUM('spouse', 'spouse and kid', 'kid', 'single', 'spouse and kid 2', 'spouse and kid 3', 'spouse and kid 4') NOT NULL");
+  ```
+
 
 
 === Array functionality ===
@@ -23,3 +29,5 @@
           return $marks['key1'] <= $value && $marks['key2'] >= $value;
      }, $marks));
   ```
+
+
