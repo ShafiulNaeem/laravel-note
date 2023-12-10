@@ -15,6 +15,10 @@
   ```
   DB::statement("ALTER TABLE p_c_embassies MODIFY COLUMN apply_with ENUM('spouse', 'spouse and kid', 'kid', 'single', 'spouse and kid 2', 'spouse and kid 3', 'spouse and kid 4') NOT NULL");
   ```
+  if not working
+  ```
+  DB::statement("UPDATE p_c_sponsors SET source = 'own' WHERE source IS NULL;");
+  ```
 
 
 
