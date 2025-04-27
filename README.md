@@ -34,5 +34,5 @@
      }, $marks));
   ```
 - all php version
-  ``` https://php.en.uptodown.com/windows/download/3137266 ```
+  ``` https://php.en.uptodown.com/windows/versions ```
 
